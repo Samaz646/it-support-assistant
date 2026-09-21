@@ -1,6 +1,6 @@
 # IT Support Assistant
 
-AI-assisted workflow for structured IT troubleshooting and support-case analysis.
+A private IT support workflow project designed to combine structured ticket analysis, existing troubleshooting history, internal knowledge and external technical research.
 
 This private project explores how existing ticket information, previous troubleshooting steps, internal documentation and external technical sources can be combined into a structured workflow for IT fault analysis.
 
