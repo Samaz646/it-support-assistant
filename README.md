@@ -9,6 +9,16 @@ The project can process different sources of technical information, including su
 > Portfolio repository — documentation only.  
 > No customer data, production support cases or confidential internal information is included.
 
+## Project focus
+
+This project is not intended to be a traditional end-user helpdesk chatbot.
+
+Its focus is to assist IT technicians during ongoing support cases by correlating the existing ticket history, previous troubleshooting steps, technical evidence, connected knowledge sources and external documentation.
+
+Rather than immediately proposing configuration changes, the workflow aims to determine the current state of the case and identify the smallest useful diagnostic step first.
+
+The long-term direction is technician-focused decision support: AI assists with analysis, research and correlation while administrative actions remain explicitly separated from diagnostic recommendations.
+
 ## Motivation
 
 Long-running IT support cases often contain information distributed across tickets, messages, documents, screenshots, diagnostic outputs and previous troubleshooting attempts.
@@ -19,6 +29,7 @@ This makes it increasingly difficult to determine:
 - which findings are still relevant
 - what has changed since the previous analysis
 - which information is still missing
+- whether a reported or monitored condition still reflects the current system state
 - what the next useful diagnostic step should be
 
 The IT Support Assistant is intended to structure this information and support a systematic troubleshooting process without repeatedly starting the analysis from the beginning.
@@ -78,7 +89,7 @@ This allows different sources of technical evidence to be considered together.
 
 Existing troubleshooting steps and previous findings are taken into account before determining the next diagnostic action.
 
-This helps avoid repeating steps that have already been performed.
+This helps avoid repeating steps that have already been performed and keeps the analysis focused on the current state of the case.
 
 ### Knowledge base integration
 
@@ -115,6 +126,8 @@ Instead, the workflow attempts to distinguish between:
 - the reported or monitored condition
 - the actual current system state
 - the evidence required to verify the problem
+
+Diagnostic recommendations and administrative changes are treated as separate stages.
 
 ### Multiple evidence sources
 
@@ -195,6 +208,18 @@ The current workflow combines:
 
 The repository focuses on the workflow and its practical application rather than publishing private prompts, customer information or production data.
 
+## Planned development
+
+Possible future extensions of the workflow include:
+
+- structured integration with ticket or ITSM data
+- read-only retrieval of relevant device and monitoring context
+- correlation of current incidents with previous support cases
+- additional asset context such as system role, installed software or recent technical changes
+- clearer separation between diagnostic recommendations and explicitly authorized administrative actions
+
+These are development directions rather than features claimed by the current portfolio version.
+
 ## Privacy
 
 All material published in this repository is intended for demonstration and portfolio purposes.
@@ -215,4 +240,4 @@ Examples and screenshots are anonymized or created specifically for demonstratio
 
 This is an actively developed private project.
 
-The workflow is being refined using practical IT troubleshooting scenarios with the goal of improving structured case analysis, technical research and the selection of appropriate diagnostic steps.
+The workflow is being refined using practical IT troubleshooting scenarios with the goal of improving structured case analysis, technical research, evidence correlation and the selection of appropriate diagnostic steps.
