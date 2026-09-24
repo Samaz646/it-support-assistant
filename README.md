@@ -177,7 +177,7 @@ When product-specific behavior needs to be verified, relevant vendor documentati
 
 ### 4. Knowledge base search
 
-Existing technical documentation and previous troubleshooting knowledge can be searched for additional context.
+A connected internal knowledge source can be searched for technical information relevant to the current support case.
 
 ![Knowledge base search](docs/04-knowledge-base-search.png)
 
